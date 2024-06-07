@@ -5,4 +5,10 @@ builder = "NIXPACKS"
 nixPkgs = ["nodejs", "yarn"]
 
 [build.nixpacksPlan.phases.install]
-cmds=["yarn install"]
+cmds = ["yarn install"]
+
+[build.nixpacksPlan.phases.build]
+cmds = ["yarn build:admin"]
+
+[build.nixpacksPlan.phases.start]
+cmds = ["yarn start:admin"]
