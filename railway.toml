@@ -1,14 +1,12 @@
 [build]
-builder = "NIXPACKS"
+  builder = "Nixpacks v1.24.0"
 
-[build.nixpacksPlan.phases.setup]
-nixPkgs = ["nodejs", "yarn"]
+[build.setup]
+  nodejs = true
+  yarn = true
 
-[build.nixpacksPlan.phases.install]
-cmds = ["yarn install"]
+[build.install]
+  command = "yarn install"
 
-[build.nixpacksPlan.phases.build]
-cmds = ["yarn build:admin"]
-
-[build.nixpacksPlan.phases.start]
-cmds = ["yarn start:admin"]
+[build.start]
+  command = "yarn run build:admin"
