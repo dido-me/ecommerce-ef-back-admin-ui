@@ -1,5 +1,5 @@
 [build]
-  builder = "Nixpacks v1.24.0"
+  builder = "NIXPACKS"
 
 [build.setup]
   nodejs = true
