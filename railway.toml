@@ -1,12 +1,5 @@
 [build]
   builder = "NIXPACKS"
 
-[build.setup]
-  nodejs = true
-  yarn = true
-
-[build.install]
-  command = "yarn install"
-
-[build.start]
-  command = "yarn run build:admin"
+[phases.build]
+cmds = ["echo building!"]
