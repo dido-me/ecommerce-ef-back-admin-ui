@@ -4,3 +4,4 @@ buildCommand = "yarn"
 
 [deploy]
 startCommand = "yarn run build:admin"
+output_directory = "build"
