@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "yarn run build:admin"
+buildCommand = "yarn"
 
 [deploy]
 startCommand = "yarn run build:admin"
